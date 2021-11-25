@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+
+    <!-- Font awsome links -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- main container -->
+    <div class="container bg-gray-100 h-screen flex flex justify-center items-center">
+        
+        <!-- music player -->
+        <div class="bg-purple-200 py-8 h-screen w-full flex flex-col justify-evenly items-center md:h-1/2 md:w-1/2 md:flex-row md:rounded-xl">
+
+            <img src="https://pagalnew.com/coverimages/title-track-chandigarh-kare-aashiqui-500-500.jpg" alt="poster" class="rounded-full w-56 h-56 shadow-xl" id="cover-image">
+
+            <!-- player interface -->
+            <div class="icons text-4xl w-1/2 flex justify-evenly">
+                <i class="fas fa-angle-double-left cursor-pointer" id="prev-btn"></i>
+                <i class="far fa-pause-circle hidden cursor-pointer" id="pause-btn"></i>
+                <i class="far fa-play-circle cursor-pointer" id="play-btn"></i>
+                <i class="fas fa-angle-double-right cursor-pointer" id="next-btn"></i>
+            </div>
+        </div>
+    </div>
+
+    <audio src="https://pagalnew.com/mp3-songs/bollywood-mp3-songs/title-track-chandigarh-kare-aashiqui-128-kbps-sound.mp3" id="audio"></audio>
+
+    <script src="../src/index.js"></script>
+</body>
+</html>
